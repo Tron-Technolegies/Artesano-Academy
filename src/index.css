@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Parisienne&display=swap");
+@import "tailwindcss";
+
+/* Tailwind Preflight already handles the box model and default element spacing.
+   Do not add a universal * margin/padding reset here: it overrides Tailwind
+   utilities in some setups and collapses the page spacing. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    background: #f5f4f0;
+    color: #242424;
+    overflow-x: hidden;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  ::selection {
+    background: #ff6a00;
+    color: #ffffff;
+  }
+}
