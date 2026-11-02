@@ -30,7 +30,7 @@ export default function Blog() {
       {/* Blog Hero */}
       <section className="bg-[#ff6a00]">
         <div className="mx-auto max-w-[1440px] px-6 pb-16 pt-14 sm:px-8 sm:pb-20 sm:pt-16 lg:px-[60px]">
-          <p className="text-[10px] leading-[1.6]">Home / Blog</p>
+          <p className="text-[12px] leading-[1.6]">Home / Blog</p>
 
           <p className="mt-7 text-[10px] leading-[1.6]">THE ARTESANO JOURNAL</p>
 
@@ -48,14 +48,14 @@ export default function Blog() {
       <main className="mx-auto max-w-[1440px] px-6 py-14 sm:px-8 sm:py-16 lg:px-[60px] lg:py-[60px]">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
-            <p className="text-[10px] leading-[1.6]">03 / THE ARTESANO JOURNAL</p>
+            <p className="text-[12px] leading-[1.6]">03 / THE ARTESANO JOURNAL</p>
 
             <h2 className="mt-7 text-[clamp(30px,4vw,40px)] font-normal leading-[1.2] tracking-[-0.045em]">
               A fresh perspective.
             </h2>
           </div>
 
-          <p className="max-w-[300px] text-[12px] leading-[1.8] text-[#77776f]">
+          <p className="max-w-[300px] text-[13px] leading-[1.8] text-[#77776f]">
             Short reads on design, construction, and becoming a better practitioner.
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function Blog() {
                   />
                 </div>
 
-                <p className="mt-4 text-[9px] leading-[1.6] text-[#77776f]">
+                <p className="mt-4 text-[10px] leading-[1.6] text-[#77776f]">
                   {article.category} {article.readTime}
                 </p>
 

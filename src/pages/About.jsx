@@ -27,7 +27,7 @@ export default function About() {
       {/* Hero */}
       <section className="bg-[#ff6a00] px-6 py-14 sm:px-8 sm:py-16 lg:px-[60px] lg:py-[68px]">
         <div className="mx-auto max-w-[1440px]">
-          <p className="text-[11px]">Home / About</p>
+          <p className="text-[12px]">Home / About</p>
 
           <p className="mt-8 text-[10px] font-medium">ABOUT ARTESANO</p>
 
@@ -46,7 +46,7 @@ export default function About() {
         <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-[12%]">
           {/* Left */}
           <div>
-            <p className="text-[10px] font-medium">02 / THE ARTESANO APPROACH</p>
+            <p className="text-[12px] font-medium">02 / THE ARTESANO APPROACH</p>
 
             <h2 className="mt-7 max-w-[420px] text-[clamp(34px,4vw,44px)] font-normal leading-[1.25] tracking-[-0.05em]">
               Great builders don’t stop at the classroom.
@@ -60,7 +60,7 @@ export default function About() {
 
             <a
               href="/course"
-              className="mt-6 inline-flex min-h-[44px] items-center gap-3 bg-[#f5f4f0] px-5 text-[10px] text-[#242424] transition-opacity hover:opacity-80"
+              className="mt-6 inline-flex min-h-[44px] items-center gap-3 bg-[#f5f4f0] px-5 text-[11px] text-[#242424] transition-opacity hover:opacity-80"
             >
               Our learning philosophy
               <span aria-hidden="true">↘</span>

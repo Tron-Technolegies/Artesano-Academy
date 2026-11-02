@@ -69,11 +69,11 @@ function HeroIllustration({ type }) {
 export default function CourseHero({ course }) {
   return (
     <section className="bg-[#ff6900] px-[5%] pb-[50px] pt-[30px]">
-      <p className="mb-10 text-[10px]">Home / Course / {course.title}</p>
+      <p className="mb-10 text-[12px]">Home / Course / {course.title}</p>
 
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div>
-          <p className="mb-5 text-[9px] uppercase">{course.label}</p>
+          <p className="mb-5 text-[10px] uppercase">{course.label}</p>
 
           <h1 className="mb-10 text-[clamp(44px,5vw,68px)] font-normal leading-[1.1] tracking-[-0.05em]">
             {course.title}
@@ -85,7 +85,7 @@ export default function CourseHero({ course }) {
 
           <button
             type="button"
-            className="mt-10 flex items-center justify-between gap-10 bg-[#242522] px-5 py-4 text-[11px] text-white"
+            className="mt-10 flex items-center justify-between gap-10 bg-[#242522] px-5 py-4 text-[12px] text-white"
           >
             <span>Enquire about this course</span>
             <span className="text-[17px]">↗</span>

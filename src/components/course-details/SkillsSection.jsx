@@ -1,7 +1,7 @@
 export default function SkillsSection({ skills = [] }) {
   return (
     <section className="mt-20 sm:mt-24">
-      <span className="text-[9px] font-medium">03 / BUILD YOUR UNDERSTANDING</span>
+      <span className="text-[12px] font-medium">03 / BUILD YOUR UNDERSTANDING</span>
 
       <h2 className="mb-0 mt-5 text-[clamp(30px,3.5vw,38px)] font-normal leading-[1.3] tracking-[-0.045em]">
         Skills to work towards.

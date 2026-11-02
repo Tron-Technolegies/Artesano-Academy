@@ -109,7 +109,7 @@ function CourseCard({ course }) {
           className={`relative flex aspect-[1.58/1] items-center justify-center overflow-hidden p-3 ${visualBackground[course.type]}`}
         >
           <span
-            className={`absolute left-[14px] top-[16px] text-[8px] uppercase ${
+            className={`absolute left-[14px] top-[16px] text-[10px] uppercase ${
               course.type === "civil" ? "text-[#e5e5d9]" : "text-[#292a27]"
             }`}
           >
@@ -121,15 +121,15 @@ function CourseCard({ course }) {
 
         {/* Card content */}
         <div className="flex flex-1 flex-col px-[21px] pb-[18px] pt-[22px]">
-          <span className="text-[8px] text-[#77776f]">{course.tag}</span>
+          <span className="text-[10px] text-[#77776f]">{course.tag}</span>
 
           <h3 className="mb-[13px] mt-[18px] text-[20px] font-normal leading-[1.3] tracking-[-0.025em]">
             {course.title}
           </h3>
 
-          <p className="mb-4 text-[12px] leading-[1.8] text-[#77776f]">{course.description}</p>
+          <p className="mb-4 text-[14px] leading-[1.8] text-[#77776f]">{course.description}</p>
 
-          <div className="mt-auto flex items-center justify-between border-t border-[#deddd5] pt-[14px] text-[10px] transition-opacity group-hover:opacity-60">
+          <div className="mt-auto flex items-center justify-between border-t border-[#deddd5] pt-[14px] text-[11px] transition-opacity group-hover:opacity-60">
             <span>Explore pathway</span>
             <span className="text-[17px]">↗</span>
           </div>
@@ -155,19 +155,19 @@ export default function Course() {
         {/* Orange hero */}
         <section className="bg-[#ff6900]">
           <div className="mx-auto w-[calc(100%-40px)] max-w-[1440px] py-[55px] sm:w-[calc(100%-80px)] sm:py-[64px] lg:w-[calc(100%-120px)]">
-            <div className="mb-[28px] flex items-center gap-[5px] text-[10px]">
+            <div className="mb-[28px] flex items-center gap-[5px] text-[12px]">
               <Link to="/">Home</Link>
               <span>/</span>
               <span>Course</span>
             </div>
 
-            <span className="text-[9px]">BUILD YOUR NEXT CHAPTER</span>
+            <span className="text-[10px]">BUILD YOUR NEXT CHAPTER</span>
 
             <h1 className="mb-[22px] mt-[27px] text-[clamp(44px,5.4vw,68px)] font-normal leading-[1.05] tracking-[-0.065em]">
               Find your direction.
             </h1>
 
-            <p className="text-[12px] leading-[1.8]">
+            <p className="text-[13px] leading-[1.8]">
               Explore practical learning in architecture, civil engineering, and digital design.
             </p>
           </div>
@@ -179,7 +179,7 @@ export default function Course() {
             {/* Heading */}
             <div className="flex flex-col justify-between gap-5 lg:flex-row lg:gap-[60px]">
               <div>
-                <span className="text-[9px]">01 / FIND YOUR DIRECTION</span>
+                <span className="text-[11px]">01 / FIND YOUR DIRECTION</span>
 
                 <h2 className="mb-0 mt-[31px] text-[clamp(30px,3.5vw,42px)] font-normal leading-[1.2] tracking-[-0.055em]">
                   Your ambition.
@@ -187,7 +187,7 @@ export default function Course() {
                 </h2>
               </div>
 
-              <p className="mt-[38px] text-[12px] leading-[1.8] text-[#77776f] lg:w-[30%] lg:max-w-[360px]">
+              <p className="mt-[38px] text-[13px] leading-[1.8] text-[#77776f] lg:w-[30%] lg:max-w-[360px]">
                 Explore the skills that bring ideas to life.
                 <br />
                 Find a direction that fits the future you want to build.
@@ -201,7 +201,7 @@ export default function Course() {
                   key={category}
                   type="button"
                   onClick={() => setActiveCategory(category)}
-                  className={`min-h-[44px] px-[14px] py-3 text-left text-[10px] transition-colors ${
+                  className={`min-h-[44px] px-[14px] py-3 text-left text-[11px] transition-colors ${
                     activeCategory === category
                       ? "bg-[#242522] text-[#f5f4ef]"
                       : "text-[#292a27] hover:bg-[#e9e9e2]"
@@ -220,7 +220,7 @@ export default function Course() {
             </div>
 
             {/* Note */}
-            <p className="mt-[25px] text-[10px] leading-[1.8] text-[#77776f]">
+            <p className="mt-[25px] text-[14px] leading-[1.8] text-[#77776f]">
               Illustrative learning pathways. Final curriculum, duration, and admissions details to
               be confirmed by Artesano Academy.
             </p>

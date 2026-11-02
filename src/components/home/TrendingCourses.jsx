@@ -44,6 +44,7 @@ const courses = [
 
 function CourseDiagram({ type, dark }) {
   const stroke = dark ? "#c8c8bc" : "#424b43";
+
   return (
     <svg viewBox="0 0 360 220" className="h-full w-full" fill="none" aria-hidden="true">
       <g stroke={stroke} strokeWidth="1.2" strokeLinejoin="round">
@@ -57,6 +58,7 @@ function CourseDiagram({ type, dark }) {
             <path d="m20 180 160-40 160 40" strokeDasharray="3 5" opacity=".5" />
           </>
         )}
+
         {type === 2 && (
           <>
             <path d="M25 105 180 60 335 105 180 155Z" />
@@ -66,6 +68,7 @@ function CourseDiagram({ type, dark }) {
             <path d="M5 95 180 40l175 55M5 175l175 45 175-45" strokeDasharray="3 5" opacity=".5" />
           </>
         )}
+
         {type === 3 && (
           <>
             <path d="M20 105 180 55 340 105 180 155Z" />
@@ -98,10 +101,12 @@ export default function TrendingCourses() {
         <div className="mb-8 flex flex-col justify-between gap-5 md:mb-9 md:flex-row md:items-end">
           <div>
             <p className="mb-6 text-[12px] uppercase">01 / Build in-demand skills</p>
+
             <h2 className="text-[34px] leading-[1.08] tracking-[-0.055em] sm:text-[42px] lg:text-[44px]">
               Our trending courses.
             </h2>
           </div>
+
           <div className="max-w-[285px] text-[13px] leading-[1.9] text-[#777777] md:pb-1">
             <Link
               to="/course"
@@ -113,33 +118,41 @@ export default function TrendingCourses() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid cursor-pointer grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {courses.map((course) => (
-            <article key={course.title} className="min-w-0 border border-[#d9d8d1]">
-              <div className="h-[210px] p-4 sm:h-[220px]" style={{ backgroundColor: course.bg }}>
-                <p className={`text-[10px] ${course.dark ? "text-white" : "text-[#242424]"}`}>
-                  {course.category}
-                </p>
-                <div className="h-[175px] sm:h-[185px]">
-                  <CourseDiagram type={course.type} dark={course.dark} />
+            <Link
+              key={course.title}
+              to={course.link}
+              className="block min-w-0 border border-[#d9d8d1] transition-colors hover:border-[#ff6a00]"
+            >
+              <article className="h-full">
+                <div className="h-[210px] p-4 sm:h-[220px]" style={{ backgroundColor: course.bg }}>
+                  <p className={`text-[10px] ${course.dark ? "text-white" : "text-[#242424]"}`}>
+                    {course.category}
+                  </p>
+
+                  <div className="h-[175px] sm:h-[185px]">
+                    <CourseDiagram type={course.type} dark={course.dark} />
+                  </div>
                 </div>
-              </div>
-              <div className="p-5 sm:p-[22px]">
-                <p className="mb-4 text-[10px] text-[#777777]">{course.eyebrow}</p>
-                <h3 className="mb-3 text-[20px] leading-tight tracking-[-0.025em]">
-                  {course.title}
-                </h3>
-                <p className="min-h-[48px] text-[13px] leading-[1.9] text-[#777777]">
-                  {course.description}
-                </p>
-                <Link
-                  to={course.link}
-                  className="mt-4 flex items-center justify-between border-t border-[#d9d8d1] pt-4 text-[12px] transition-colors hover:text-[#ff6a00]"
-                >
-                  Explore pathway <span>↗</span>
-                </Link>
-              </div>
-            </article>
+
+                <div className="p-5 sm:p-[22px]">
+                  <p className="mb-4 text-[10px] text-[#777777]">{course.eyebrow}</p>
+
+                  <h3 className="mb-3 text-[20px] leading-tight tracking-[-0.025em]">
+                    {course.title}
+                  </h3>
+
+                  <p className="min-h-[48px] text-[13px] leading-[1.9] text-[#777777]">
+                    {course.description}
+                  </p>
+
+                  <div className="mt-4 flex items-center justify-between border-t border-[#d9d8d1] pt-4 text-[12px] transition-colors hover:text-[#ff6a00]">
+                    Explore pathway <span>↗</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
 

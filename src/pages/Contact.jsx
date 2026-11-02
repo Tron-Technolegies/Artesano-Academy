@@ -11,7 +11,7 @@ export default function Contact() {
       {/* Contact Hero */}
       <section className="bg-[#ff6a00]">
         <div className="mx-auto max-w-[1440px] px-6 pb-10 pt-8 sm:px-8 sm:pb-14 sm:pt-10 lg:px-[60px]">
-          <p className="text-[10px] leading-[1.6]">Home / Contact Us</p>
+          <p className="text-[12px] leading-[1.6]">Home / Contact Us</p>
 
           <p className="mt-10 text-[10px] leading-[1.6]">LET'S START A CONVERSATION</p>
 

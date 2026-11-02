@@ -5,19 +5,19 @@ const mentors = [
     number: "01",
     category: "Architecture & Spatial Design",
     description: "Design thinking, spatial planning, and architectural communication.",
-    image: "mentor.png",
+    image: "mentor.avif",
   },
   {
     number: "02",
     category: "Civil Engineering & Construction",
     description: "Construction processes, technical drawings, and site understanding.",
-    image: "mentor.png",
+    image: "mentor.avif",
   },
   {
     number: "03",
     category: "Digital Design & Automation",
     description: "Digital modelling, coordinated workflows, and design tools.",
-    image: "mentor.png",
+    image: "mentor.avif",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function Mentors() {
                 <img
                   src={mentor.image}
                   alt="Mentor portrait"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-[center_8%]"
                   loading="lazy"
                 />
               </div>
