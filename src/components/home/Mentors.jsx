@@ -5,16 +5,19 @@ const mentors = [
     number: "01",
     category: "Architecture & Spatial Design",
     description: "Design thinking, spatial planning, and architectural communication.",
+    image: "mentor.png",
   },
   {
     number: "02",
     category: "Civil Engineering & Construction",
     description: "Construction processes, technical drawings, and site understanding.",
+    image: "mentor.png",
   },
   {
     number: "03",
     category: "Digital Design & Automation",
     description: "Digital modelling, coordinated workflows, and design tools.",
+    image: "mentor.png",
   },
 ];
 
@@ -45,16 +48,26 @@ export default function Mentors() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {mentors.map((mentor) => (
-            <article key={mentor.number}>
-              <ProfilePlaceholder number={mentor.number} />
-              <p className="mt-5 text-[11px]">{mentor.category}</p>
-              <h3 className="mb-4 mt-5 text-[20px] leading-tight">Meet your mentor.</h3>
-              <p className="text-[13px] leading-[1.9] text-[#777777]">{mentor.description}</p>
-              <p className="mt-5 text-10px] text-[#777777]">
-                Name, portrait, and credentials to be added.
-              </p>
+            <article key={mentor.number} className="mx-auto w-full max-w-[350px] bg-[#f5f4f0]">
+              <div className="h-[280px] overflow-hidden">
+                <img
+                  src={mentor.image}
+                  alt="Mentor portrait"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <div className="p-4">
+                <p className="mb-2 text-[10px]">{mentor.category}</p>
+                <h3 className="mb-1 text-[20px] leading-tight">Meet your mentor.</h3>
+                <p className="text-[13px] leading-[1.9] text-[#777777]">{mentor.description}</p>
+                <p className="mt-3 text-[11px] text-[#777777]">
+                  Name, portrait, and credentials to be added.
+                </p>
+              </div>
             </article>
           ))}
         </div>
